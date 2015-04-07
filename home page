@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Painter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href="Aapkapainter.css" rel="stylesheet">
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+        }
+     var y = document.forms["myForm"]["flocation"].value;
+    if (y == null || y == "") {
+        alert("location must be filled out");
+        return false;
+    }
+     var z = document.forms["myForm"]["fdimension"].value;
+    if (z == null || z == "") {
+        alert("dimension must be filled out");
+        return false;
+    }
+}
+</script>
+
+</head>
+
+<body>
+<div id="main">
+<div id="header">
+ 	<p> <h2 style="background-color:#FF7F50;color:black"> Aapka Painter </h2> </p>
+<nav id="nav01"></nav>
+
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h2>Our Work</h2>      
+    <div class="container-fluid">
+	 <div class="row">
+    <div class="col-md-4" style="background-color:lavender;"><img src="C:\Users\anjishnuu\Desktop\Paints\Phouse1.jpg" class="img-responsive" alt="example 1" style="width:350px;height:350px"></div>
+    <div class="col-md-4" style="background-color:lavenderblush;"><img src="C:\Users\anjishnuu\Desktop\Paints\Phouse2.jpg" class="img-responsive" alt="example 1" style="width:350px;height:350px"></div>
+    <div class="col-md-4" style="background-color:lavender;"><img src="C:\Users\anjishnuu\Desktop\Paints\Phouse3.jpg" class="img-responsive" alt="example 1" style="width:350px;height:350px"></div>
+  </div>
+  </div>
+
+</div>
+<p>Please submit the following details</p>
+<form name="myForm" action="demo_form.asp"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<br>
+<br>
+Location: <input type="text" name="flocation">
+<br>
+<br>
+Dimensions: <input type="var" name="fdimension">
+<br>
+<br>
+<input type="submit" value="Submit">
+</form>
+
+
+<footer id="foot01"></footer>
+</div>
+<script src="aapkapainter.js"></script>
+
+</body>
+</hmtl>
